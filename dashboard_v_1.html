@@ -1,0 +1,169 @@
+<%{
+	%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ERP Dashboard</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+    padding: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.icon-box {
+    background: #f2f3f5;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.card p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.card {
+    text-align: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    color: black;   /* change icon color */
+}
+
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .dashboard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="card">
+        <div class="icon-box"><div class="icon"><div class="card">
+    
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/7001/7001393.png" alt="group image">
+    </div>
+    
+</div></div>
+        <p>Project Group</p>
+    </div>
+
+    <div class="card">
+        <div class="icon-box"><div class="icon"><div class="card">
+    
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/9805/9805668.png" alt="group image">
+    </div>
+
+</div></div>
+        <p>Project type</p>
+    </div>
+    
+
+    <div class="card">
+        <div class="icon-box"><div class="icon"><div class="card">
+    
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/18663/18663024.png" alt="group image">
+    </div>
+
+</div></div>
+        <p>Difficulty level</p>
+    </div>
+
+
+        <div class="card">
+        <div class="icon-box"><div class="icon"><div class="card">
+    
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/12113/12113348.png" alt="group image">
+    </div>
+
+</div></div>
+        <p>Shift hours</p>
+    </div>
+
+    <div class="card">
+        <div class="icon-box"><div class="icon"><div class="card">
+    
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/7586/7586562.png" alt="group image">
+    </div>
+
+</div></div>
+        <p>Email Templates</p>
+    </div>
+
+    <div class="card">
+        <div class="icon-box"><div class="icon"><div class="card">
+    
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/10479/10479253.png" alt="group image">
+    </div>
+
+</div></div>
+        <p>Holiday Calender</p>
+    </div>
+
+    <div class="card">
+        <div class="icon-box"><div class="icon"><div class="card">
+    
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/292/292369.png" alt="group image">
+    </div>
+
+</div></div>
+        <p>Department</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+<%
+
+}%>
